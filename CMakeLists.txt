@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+project(myshell C)
+
+set(CMAKE_C_STANDARD 99)
+
+set(SOURCES
+    myshell.c
+    history.c
+    rawmode.c
+    env.c
+    # Add more .c files as you create them
+)
+
+add_executable(myshell ${SOURCES})
